@@ -17,10 +17,10 @@ void countGrades(const int scores[], int n, int& a, int& b, int& c, int& d, int&
   for (int i = 0; i < n; i++) {
       if (scores[i] >= 90)
           a++;
-      else if (scorees[i] >= 80)
+      else if (scores[i] >= 80)
           b++;
       else if (scores[i] >= 70)
-          c++
+          c++;
       else if (scores[i] >= 60)
           d++;
       else
@@ -44,7 +44,7 @@ void officeHours(const int scores[], int n, int* failingCount) {
   int count = 0; 
   while (i < n) {
       if (scores[i] < 60) {
-          std::cout "Student at index " << i << " needs to come to office hours." << "\n";
+          std::cout << "Student at index " << i << " needs to come to office hours." << "\n";
           count++;
       }
       i++;
